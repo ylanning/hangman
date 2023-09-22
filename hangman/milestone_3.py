@@ -16,6 +16,8 @@ def check_guess(guess):
             
 # Task 2
 import random
+# Create a list of secrect words
+secret_words = ['apple', 'elephant', 'airplane', 'pineaple', 'computer', 'zebra', 'house', 'garden']
 
 def ask_for_input():
     """ Ask guess to type any letter.
@@ -27,8 +29,6 @@ def ask_for_input():
     while True:
         guess = input('Please type any letter ....:  ')
         guess_input = check_guess(guess)
-        # Create a list of secrect words
-        secret_words = ['apple', 'elephant', 'airplane', 'pineaple', 'computer', 'zebra', 'house', 'garden']
         # Generating random word from secret word from the list
         secret_word = random.choice(secret_words)
         # Check if the input it valid letter and is contained in secret word
