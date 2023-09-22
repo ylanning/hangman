@@ -1,0 +1,1 @@
+guess = input("Please type any letter").lower()
